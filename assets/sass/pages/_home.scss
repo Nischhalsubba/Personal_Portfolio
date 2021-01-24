@@ -1,0 +1,100 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 200px;
+
+  .intro {
+    font-size: 60px;
+    line-height: 97.2%;
+    letter-spacing: -0.03em;
+  }
+
+  .intro_subcontent {
+    font-size: 32px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    width: 60%;
+    color: $gray;
+  }
+}
+
+.arrow {
+  width: 33.61px;
+  height: 38.04px;
+  margin-top: 115px;
+}
+
+
+#sky {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.blur,
+.main,
+.particles {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: .1;
+}
+
+.blur {
+  background-color: #F7FFF7;
+  filter: blur(10px);
+  transform: scale(1.1);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+}
+
+
+.particles {
+  position: fixed;
+  z-index: -1;
+  transform-style: preserve-3d;
+  /*     animation: rotate-container 10s infinite ease-in-out alternate; */
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(45vw);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-container {
+  0% {
+    transform:
+      perspective(1000px) translateZ(0px);
+  }
+
+  100% {
+    transform:
+      perspective(1000px) translateZ(150px);
+  }
+}

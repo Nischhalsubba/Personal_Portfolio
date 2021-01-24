@@ -2,25 +2,22 @@
 # Color
 --------------------------------------------------------------*/
 
-$background-body: #ffffff;
+$background-body: #F3F3F3;
 $color-background-hr: #ccc;
 $color__text-main: #000000;
-
-
-
-
-
-
+$black: #181717;
+$gray: #606060;
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-$font__main:'Alegreya', serif;;
-$font__secondary:'Open Sans', sans-serif;;
-
-$font__heading:"https://fonts.googleapis.com/css?family=Alegreya:400,500,700&display=swap";
+$font__heading:"https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap";
 $font__line-height-body: 2;
 $font__line-height-pre:2.5;
+$font__main:'DM Sans',
+sans-serif;
+$font__secondary:'DM Sans',
+sans-serif;
 
 /*--------------------------------------------------------------
 # Structure

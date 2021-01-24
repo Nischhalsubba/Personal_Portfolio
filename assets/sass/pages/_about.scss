@@ -1,0 +1,92 @@
+.about_hero {
+  .left {
+    width: 50%;
+
+    .details {
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 117%;
+      /* or 37px */
+      letter-spacing: -0.03em;
+      color: $gray;
+    }
+  }
+
+  .intro_subcontent {
+    max-width: 50%;
+  }
+}
+
+.tools {
+  margin-top: 130px;
+  margin-bottom: 130px;
+
+  .software,
+  .skill {
+    display: flex;
+
+    .title {
+      width: 150px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 121.5%;
+      /* or 22px */
+
+      letter-spacing: -0.03em;
+      text-decoration-line: underline;
+    }
+
+    .contents {
+      margin-left: 64px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 121.5%;
+      /* or 22px */
+
+      letter-spacing: -0.03em;
+    }
+
+
+  }
+
+  .skill {
+    margin-top: 62px;
+  }
+}
+
+.resume_section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
+  padding-top: 62px;
+
+  .intro {
+    font-size: 32px;
+    line-height: 117%;
+    /* or 37px */
+    letter-spacing: -0.03em;
+  }
+
+  .contact_me {
+    display: flex;
+    flex-direction: column;
+
+    .email {
+      font-size: 32px;
+      line-height: 117%;
+      /* or 37px */
+      color: $black;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+
+    .btn {
+      font-size: 18px;
+      line-height: 121.5%;
+      /* identical to box height, or 22px */
+      color: $black;
+      letter-spacing: -0.03em;
+      margin-top: 24px;
+    }
+  }
+}

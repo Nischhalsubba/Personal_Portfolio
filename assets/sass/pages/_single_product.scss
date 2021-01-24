@@ -1,0 +1,329 @@
+.hero_banner {
+  position: absolute;
+  top: 0px;
+  background-color: #D3D3D3;
+  height: 600px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.product_image {
+  margin: auto;
+  width: 800px;
+  height: 600px;
+  margin-top: 88px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product_hero {
+  margin-top: 0px;
+
+  .left {
+    .intro {
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 120%;
+      /* or 72px */
+      color: $black;
+    }
+
+    .details {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 120%;
+      /* or 29px */
+      color: $gray;
+      max-width: 90%;
+    }
+  }
+}
+
+// description
+
+.description {
+  margin: 100px 0px;
+  margin-bottom: 0px;
+
+  .item {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 120%;
+      /* identical to box height, or 36px */
+      background-color: transparent;
+      margin: 0px;
+    }
+
+    .content {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 120%;
+      color: $gray;
+      margin-top: 24px;
+    }
+  }
+}
+
+// Gallery
+.gallery {
+  padding: 40px 0px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+      margin-bottom: 20px;
+      width: 23.2456140351%;
+      position: relative;
+
+      a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+
+        &:before {
+          position: absolute;
+          width: 32px;
+          height: 32px;
+          top: 40%;
+          left: 50%;
+          margin: -14px 0 0 -16px;
+          content: "";
+          opacity: 0;
+          z-index: 1;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+        }
+
+        &:hover {
+          &:before {
+            top: 50%;
+            opacity: 1;
+          }
+
+          &:after {
+            opacity: 1;
+          }
+        }
+
+        &:after {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.3);
+          content: "";
+          opacity: 0;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
+}
+
+.port {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background: #ffffff;
+  background-color: #fafafa;
+  z-index: 103;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  img {
+    width: 50%;
+  }
+
+  .description {
+    float: left;
+    width: 50%;
+    max-height: 100%;
+    padding: 0 40px 40px;
+    overflow: auto;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 2.3;
+    padding: 0;
+  }
+
+  >* {
+    opacity: 0;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+}
+
+.port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.close {
+  width: 21px;
+  height: 21px;
+  background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
+  position: absolute;
+  right: 10px;
+  top: -121px;
+  opacity: 1;
+  z-index: 1004;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.item_open {
+  .close {
+    opacity: 1;
+    top: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// test
+.gallery {
+  padding: 20px;
+}
+
+.content {
+  cursor: pointer;
+  margin-top: 0;
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+
+/* Popup section */
+.popup {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.829);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 0.2s;
+}
+
+.pop {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+
+.container.pop {
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.pop>article {
+  min-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.popup img {
+  width: 100%;
+  z-index: 5;
+  animation: popup 0.3s linear both;
+}
+
+.close-btn {
+  background: gray;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  animation: popup 0.3s linear 0.3s both;
+}
+
+.close-btn:hover {
+  background: black;
+}
+
+.icon-cancel::before {
+  position: relative;
+  top: -0.05px;
+}
+
+.closepopup {
+  animation: closepopup 1s linear both;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes closepopup {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

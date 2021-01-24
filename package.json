@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@animxyz/core": "^0.4.0",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@glidejs/glide": "^3.4.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-terser": "^2.0.0",
+    "lightgallery.js": "^1.4.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "cssnano": "^4.1.10",
+    "fslightbox": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",

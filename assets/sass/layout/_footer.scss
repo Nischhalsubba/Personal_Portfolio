@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 52px;
+  margin-top: 150px;
+
+  .footer_name {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 120%;
+    /* or 25px */
+    color: #2429AF;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+  }
+
+  .menu {
+    a {
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 120%;
+      /* or 25px */
+      color: $black;
+      letter-spacing: -0.03em;
+      margin-right: 32px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
