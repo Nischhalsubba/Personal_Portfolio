@@ -1,0 +1,207 @@
+body {
+	color: #111;
+}
+.aside-navigation {
+	nav {
+		ul {
+			li {
+				a {
+					color: #111;
+					&:hover {
+						color: #ff6f61;
+					}
+				}
+			}
+		}
+	}
+	.social-icons {
+		li {
+			a {
+				color: #111;
+				&:hover {
+					color: #ff6f61;
+				}
+			}
+		}
+	}
+	background: #fff;
+}
+.share-links {
+	li {
+		a {
+			color: #111;
+			background: #eee;
+			&:hover {
+				color: #fff;
+				background: #ff6f61;
+			}
+		}
+	}
+}
+.comment {
+	.reply {
+		color: #111;
+		&:hover {
+			color: #ff6f61;
+		}
+	}
+	.publication-date {
+		color: #444;
+	}
+}
+.contact-form {
+	input {
+		&::placeholder {
+			color: #111;
+		}
+		background: #f8f8f8;
+	}
+	textarea {
+		&::placeholder {
+			color: #111;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #333;
+			border-radius: 20px;
+		}
+		&::-webkit-scrollbar-track {
+			background: #eee;
+		}
+		background: #f8f8f8;
+	}
+	input[type=submit] {
+		background: #111;
+		color: #fff;
+		&:hover {
+			background: #ff6f61;
+		}
+	}
+}
+.footer-default {
+	.follow-us-links {
+		li {
+			a {
+				color: #111;
+				&:hover {
+					color: #ff6f61;
+				}
+			}
+		}
+	}
+}
+.blog {
+	.entry-title {
+		a {
+			color: #111;
+			&:hover {
+				color: #ff6f61;
+			}
+		}
+	}
+}
+.portfolio-item-heading {
+	color: #111;
+}
+.contact-info {
+	a {
+		color: #111;
+	}
+	background: #f8f8f8;
+	li {
+		a {
+			&:hover {
+				color: #ff6f61;
+			}
+		}
+	}
+}
+.next {
+	color: #111;
+	h2 {
+		&:hover {
+			color: #ff6f61;
+		}
+	}
+}
+.hero {
+	.social-links {
+		li {
+			a {
+				color: #111;
+				&:hover {
+					color: #ff6f61;
+				}
+			}
+		}
+	}
+}
+.featured-works {
+	.item {
+		color: #111;
+	}
+}
+.close-nav {
+	color: #111;
+}
+.single-project {
+	.info {
+		color: #111;
+	}
+	.intro {
+		ul {
+			li {
+				color: #222;
+			}
+		}
+	}
+}
+.open-nav {
+	background: #111;
+	i {
+		background: #fff;
+		&:before {
+			background: #fff;
+		}
+		&:after {
+			background: #fff;
+		}
+	}
+	&:hover {
+		background: #ff6f61;
+	}
+}
+.btn {
+	background: #111;
+	color: #fff;
+	&:hover {
+		background: #ff6f61;
+	}
+}
+.aside-navigation-overlay {
+	background: rgba(0, 0, 0, .7);
+}
+.portfolio-item-category {
+	color: #222;
+}
+.team-member {
+	.overlay {
+		.info {
+			h3 {
+				color: #222;
+			}
+		}
+		background: #fff;
+	}
+}
+.blog-post {
+	.entry-date {
+		color: #444;
+	}
+}
+.service-icon {
+	color: #fff;
+	background: #ff6f61;
+}
+.entry-category {
+	color: #ff6f61;
+}
