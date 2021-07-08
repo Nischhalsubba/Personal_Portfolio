@@ -9,6 +9,7 @@
 --------------------------------------------------------------*/
 @import "./base/typography";
 @import "./component/icons";
+@import "./component/icons";
 
 /*--------------------------------------------------------------
 # Colors
@@ -53,3 +54,4 @@
 # Media Queries
 --------------------------------------------------------------*/
 // @import "layout/media-queries";
+@import "./component/responsive";
