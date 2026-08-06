@@ -4,6 +4,94 @@
 
 # ✦ Nischhal Personal Portfolio
 
+<!-- interactive-readme-standard:start -->
+
+> [!NOTE]
+> **Branch-specific documentation:** this section is maintained for [`master`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master). It is generated from the files present on this branch and preserves the project-authored README below.
+
+<details open>
+<summary><strong>Interactive repository guide</strong></summary>
+
+## Branch overview
+
+| Item | Value |
+|---|---|
+| Repository | [`Nischhalsubba/Personal_Portfolio`](https://github.com/Nischhalsubba/Personal_Portfolio) |
+| Branch | [`master`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master) |
+| Detected stack | Sass, HTML, JavaScript, CSS |
+| Detected manifests | package.json |
+| Documentation policy | Every maintained branch must explain purpose, setup, structure, architecture, flows, testing, delivery, security, and ownership. |
+
+## Repository structure
+
+```mermaid
+flowchart TD
+    ROOT["Personal_Portfolio / master"]
+    ROOT --> P0[".github/"]
+    ROOT --> P1[".vscode/"]
+    ROOT --> P2["assets/"]
+    ROOT --> P3["dest/"]
+    ROOT --> P4["docs/"]
+    ROOT --> P5["js/"]
+    ROOT --> P6[".gitignore"]
+    ROOT --> P7["_config.yml"]
+    ROOT --> P8["about.html"]
+    ROOT --> P9["AGENTS.md"]
+    ROOT --> P10["gulpfile.js"]
+    ROOT --> P11["index.html"]
+    ROOT --> P12["package-lock.json"]
+    ROOT --> P13["package.json"]
+    ROOT --> P14["single.html"]
+    ROOT --> P15["style.css"]
+    ROOT --> P16["style.css.map"]
+```
+
+The diagram is generated from the branch's actual top-level files and directories. Use the branch link above for complete source navigation.
+
+## Website or application structure
+
+```mermaid
+flowchart TD
+    APP["Personal_Portfolio"]
+    APP --> SOURCE["No conventional route directory detected"]
+    SOURCE --> VERIFY["Inspect the project-specific documentation below"]
+```
+
+## Application and responsibility flow
+
+```mermaid
+flowchart LR
+    ACTOR["User / contributor"]
+    ACTOR --> A0["Documentation: docs"]
+    A0 --> A1["Delivery: .github"]
+    A1 --> DELIVERY["Delivery: GitHub Actions"]
+```
+
+## Change-to-delivery flow
+
+```mermaid
+flowchart LR
+    CHANGE["Change on master"]
+    CHECK["Validate: npm run test"]
+    REVIEW["Review documentation and architecture impact"]
+    RELEASE["Merge, release, or deploy according to this branch"]
+    CHANGE --> CHECK --> REVIEW --> RELEASE
+```
+
+## README requirements for this branch
+
+- Explain what this branch contains and how it differs from the default branch.
+- Keep installation, configuration, usage, testing, deployment, security, support, and license information accurate.
+- Document repository, website or application, API, data, authentication, background-job, and deployment flows when they exist.
+- Prefer Mermaid diagrams and expandable `<details>` sections for visual navigation.
+- Link diagrams and modules to real source paths; never invent missing components.
+- Preserve project-specific documentation and update diagrams whenever architecture or major paths change.
+- Treat secrets, private infrastructure, customer data, and credentials as prohibited README content.
+
+</details>
+
+<!-- interactive-readme-standard:end -->
+
 ### Static UI/UX Portfolio Concept — 2021
 
 **A minimal static personal portfolio website for Nischhal Raj Subba, built with HTML, compiled CSS, JavaScript, AnimXYZ animation utilities, Font Awesome icons, responsive navigation, particle background styling, project-preview sections, and editorial portfolio spacing.**
