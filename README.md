@@ -1,96 +1,206 @@
-<div align="center">
-
-<img width="100%" src="https://i.imgur.com/a8ccynu.jpg" alt="Personal Portfolio cover preview" />
-
-# ✦ Nischhal Personal Portfolio
-
 <!-- interactive-readme-standard:start -->
 
-> [!NOTE]
-> **Branch-specific documentation:** this section is maintained for [`master`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master). It is generated from the files present on this branch and preserves the project-authored README below.
+<div align="center">
 
-<details open>
-<summary><strong>Interactive repository guide</strong></summary>
+# Personal_Portfolio
 
-## Branch overview
+**Branch-aware technical guide for [`master`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master)**
 
-| Item | Value |
+<p><img alt="branch: master" src="https://img.shields.io/static/v1?label=&message=branch%3A%20master&color=5965F2&style=flat-square"> <img alt="Sass" src="https://img.shields.io/static/v1?label=&message=Sass&color=24292F&style=flat-square"> <img alt="HTML" src="https://img.shields.io/static/v1?label=&message=HTML&color=24292F&style=flat-square"> <img alt="JavaScript" src="https://img.shields.io/static/v1?label=&message=JavaScript&color=24292F&style=flat-square"> <img alt="CSS" src="https://img.shields.io/static/v1?label=&message=CSS&color=24292F&style=flat-square"> <img alt="docs: branch-aware" src="https://img.shields.io/static/v1?label=&message=docs%3A%20branch-aware&color=8250DF&style=flat-square"></p>
+
+<p>
+  <a href="https://github.com/Nischhalsubba/Personal_Portfolio/tree/master"><strong>Browse source</strong></a> ·
+  <a href="https://github.com/Nischhalsubba/Personal_Portfolio/issues"><strong>Issues</strong></a> ·
+  <a href="https://github.com/Nischhalsubba/Personal_Portfolio/codespaces/new?ref=master"><strong>Open in Codespaces</strong></a>
+</p>
+
+</div>
+
+> [!IMPORTANT]
+> This guide is generated from the files actually present on `master`. It links to detected source paths, preserves project-authored notes, and avoids claiming components that were not found.
+
+## At a glance
+
+| Item | Detected value |
 |---|---|
-| Repository | [`Nischhalsubba/Personal_Portfolio`](https://github.com/Nischhalsubba/Personal_Portfolio) |
-| Branch | [`master`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master) |
-| Detected stack | Sass, HTML, JavaScript, CSS |
-| Detected manifests | package.json |
-| Documentation policy | Every maintained branch must explain purpose, setup, structure, architecture, flows, testing, delivery, security, and ownership. |
+| Purpose | A Sass project documented from the current branch structure and manifests. |
+| Branch role | Default branch |
+| Stack | Sass, HTML, JavaScript, CSS |
+| Manifests | package.json |
+| Prerequisites | Node.js |
+| Delivery | GitHub Actions |
+| License | No license file detected |
 
-## Repository structure
+## Branch scope
+
+This is the repository's default branch.
+
+
+
+## Quick start
+
+```bash
+npm install
+npm run test
+```
+
+### Configuration surface
+
+- No committed environment example file was detected.
+
+> Never commit secrets, private keys, production credentials, customer data, or unredacted infrastructure details.
+
+## Repository map
 
 ```mermaid
 flowchart TD
     ROOT["Personal_Portfolio / master"]
     ROOT --> P0[".github/"]
-    ROOT --> P1[".vscode/"]
-    ROOT --> P2["assets/"]
-    ROOT --> P3["dest/"]
-    ROOT --> P4["docs/"]
-    ROOT --> P5["js/"]
-    ROOT --> P6[".gitignore"]
-    ROOT --> P7["_config.yml"]
-    ROOT --> P8["about.html"]
-    ROOT --> P9["AGENTS.md"]
-    ROOT --> P10["gulpfile.js"]
-    ROOT --> P11["index.html"]
-    ROOT --> P12["package-lock.json"]
-    ROOT --> P13["package.json"]
-    ROOT --> P14["single.html"]
-    ROOT --> P15["style.css"]
-    ROOT --> P16["style.css.map"]
+    ROOT --> P1["assets/"]
+    ROOT --> P2["dest/"]
+    ROOT --> P3["docs/"]
+    ROOT --> P4["js/"]
+    ROOT --> P5[".gitignore"]
+    ROOT --> P6["_config.yml"]
+    ROOT --> P7["about.html"]
+    ROOT --> P8["AGENTS.md"]
+    ROOT --> P9["gulpfile.js"]
+    ROOT --> P10["index.html"]
+    ROOT --> P11["package-lock.json"]
+    ROOT --> P12["package.json"]
+    ROOT --> P13["single.html"]
+    ROOT --> P14["style.css"]
+    ROOT --> P15["style.css.map"]
 ```
 
-The diagram is generated from the branch's actual top-level files and directories. Use the branch link above for complete source navigation.
+| Responsibility | Detected source paths |
+|---|---|
+| Documentation | [`docs`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master/docs) |
+| Delivery | [`.github`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master/.github) |
 
-## Website or application structure
+## Website or application map
 
 ```mermaid
 flowchart TD
     APP["Personal_Portfolio"]
     APP --> SOURCE["No conventional route directory detected"]
-    SOURCE --> VERIFY["Inspect the project-specific documentation below"]
+    SOURCE --> GUIDE["Use the repository and architecture maps below"]
 ```
 
-## Application and responsibility flow
+## Architecture and responsibility flow
 
 ```mermaid
 flowchart LR
-    ACTOR["User / contributor"]
-    ACTOR --> A0["Documentation: docs"]
+    USER["User / contributor"]
+    USER --> A0["Documentation: docs"]
     A0 --> A1["Delivery: .github"]
     A1 --> DELIVERY["Delivery: GitHub Actions"]
 ```
 
-## Change-to-delivery flow
+
+
+## Quality, security, and operations
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### Quality
+
+- No conventional test directory was detected automatically.
+
+Detected commands:
+- `npm run test`
+
+</td>
+<td width="33%" valign="top">
+
+### Security
+
+- No dedicated security policy or automated dependency configuration was detected.
+
+Review authentication, authorization, input validation, dependency updates, secret handling, and failure recovery before release.
+
+</td>
+<td width="34%" valign="top">
+
+### Observability
+
+- No dedicated observability integration was detected automatically.
+
+Define useful logs, metrics, traces, alerts, and rollback signals for production-facing branches.
+
+</td>
+</tr>
+</table>
+
+## Delivery flow
 
 ```mermaid
 flowchart LR
-    CHANGE["Change on master"]
-    CHECK["Validate: npm run test"]
-    REVIEW["Review documentation and architecture impact"]
-    RELEASE["Merge, release, or deploy according to this branch"]
-    CHANGE --> CHECK --> REVIEW --> RELEASE
+    CHANGE["Change on master"] --> CHECK["Tests and quality checks"]
+    CHECK --> REVIEW["Review architecture and documentation impact"]
+    REVIEW --> BUILD["Build or package"]
+    BUILD --> DEPLOY["Deploy or release"]
+    DEPLOY --> VERIFY["Verify health and rollback readiness"]
 ```
 
-## README requirements for this branch
+### Automation detected
 
-- Explain what this branch contains and how it differs from the default branch.
-- Keep installation, configuration, usage, testing, deployment, security, support, and license information accurate.
-- Document repository, website or application, API, data, authentication, background-job, and deployment flows when they exist.
-- Prefer Mermaid diagrams and expandable `<details>` sections for visual navigation.
-- Link diagrams and modules to real source paths; never invent missing components.
-- Preserve project-specific documentation and update diagrams whenever architecture or major paths change.
-- Treat secrets, private infrastructure, customer data, and credentials as prohibited README content.
+- [`.github/workflows/apply-interactive-readme.yml`](https://github.com/Nischhalsubba/Personal_Portfolio/blob/master/.github/workflows/apply-interactive-readme.yml)
+
+## Contribution flow
+
+```mermaid
+flowchart LR
+    FORK["Create branch"] --> CHANGE["Make focused change"]
+    CHANGE --> TEST["Run relevant checks"]
+    TEST --> DOCS["Update README and diagrams"]
+    DOCS --> PR["Open pull request"]
+    PR --> REVIEW["Review and iterate"]
+    REVIEW --> MERGE["Merge when ready"]
+```
+
+- Keep changes focused and explain architectural consequences.
+- Run the checks relevant to the changed area.
+- Update diagrams whenever routes, modules, data models, authentication, jobs, or delivery paths change.
+- Add screenshots or recordings for visual behavior changes when useful.
+- Use issues for reproducible defects and pull requests for reviewable changes.
+
+## Ownership and support
+
+| Topic | Source |
+|---|---|
+| Repository | [`Nischhalsubba/Personal_Portfolio`](https://github.com/Nischhalsubba/Personal_Portfolio) |
+| Branch | [`master`](https://github.com/Nischhalsubba/Personal_Portfolio/tree/master) |
+| Ownership | No CODEOWNERS file detected |
+| Contributing | Use the contribution flow above |
+| Support | [Open or review issues](https://github.com/Nischhalsubba/Personal_Portfolio/issues) |
+| License | No license file detected |
+
+<details>
+<summary><strong>Documentation maintenance checklist</strong></summary>
+
+- [ ] Purpose and branch scope are accurate.
+- [ ] Setup and configuration commands still work.
+- [ ] Repository, application, API, data, authentication, job, and deployment diagrams match the code.
+- [ ] Tests, security controls, observability, and rollback behavior are documented.
+- [ ] Links point to real files on this branch.
+- [ ] No secrets or private operational details are exposed.
 
 </details>
 
 <!-- interactive-readme-standard:end -->
+
+<!-- project-authored-notes:start -->
+<details>
+<summary><strong>Project-authored notes preserved from this branch</strong></summary>
+
+<div align="center">
+
+<img width="100%" src="https://i.imgur.com/a8ccynu.jpg" alt="Personal Portfolio cover preview" />
+
+# ✦ Nischhal Personal Portfolio
 
 ### Static UI/UX Portfolio Concept — 2021
 
@@ -298,3 +408,6 @@ Keep `index.html`, `dest/`, `js/`, and `assets/` paths intact so the site loads 
 An early static portfolio exploration documenting the foundation of Nischhal’s design journey.
 
 </div>
+
+</details>
+<!-- project-authored-notes:end -->
