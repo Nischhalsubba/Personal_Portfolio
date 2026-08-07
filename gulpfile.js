@@ -15,8 +15,6 @@ const sass = require('gulp-sass/legacy')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 
-const imageminModule = import('gulp-imagemin');
-
 const files = {
     scssPath: './assets/sass/**/*.scss',
     jsPath: './assets/js/**/*.js',
@@ -33,36 +31,15 @@ function scssTask() {
 }
 
 function jsTask() {
-    return src(files.jsPath)
+    return src(files.jsPath, { allowEmpty: true })
         .pipe(concat('app.js'))
         .pipe(terser())
         .pipe(dest('./js/'));
 }
 
 function images() {
-    return imageminModule.then(({ default: imagemin, gifsicle, optipng, svgo }) =>
-        new Promise((resolve, reject) => {
-            const stream = src(files.imgPath)
-                .pipe(imagemin([
-                    gifsicle({ interlaced: true }),
-                    optipng({ optimizationLevel: 5 }),
-                    svgo({
-                        plugins: [{
-                            name: 'preset-default',
-                            params: {
-                                overrides: {
-                                    removeViewBox: false
-                                }
-                            }
-                        }]
-                    })
-                ]))
-                .pipe(dest('./dest/Images/'));
-
-            stream.on('end', resolve);
-            stream.on('error', reject);
-        })
-    );
+    return src(files.imgPath, { allowEmpty: true })
+        .pipe(dest('./dest/Images/'));
 }
 
 const cbString = new Date().getTime();
