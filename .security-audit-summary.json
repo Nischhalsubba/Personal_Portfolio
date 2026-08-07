@@ -1,0 +1,489 @@
+{
+  "counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 11,
+    "high": 23,
+    "critical": 1,
+    "total": 35
+  },
+  "findings": [
+    {
+      "name": "bin-build",
+      "severity": "high",
+      "direct": false,
+      "range": "*",
+      "via": [
+        "decompress",
+        "download",
+        "execa",
+        "tempfile"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "bin-check",
+      "severity": "high",
+      "direct": false,
+      "range": ">=4.1.0",
+      "via": [
+        "execa"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "bin-version",
+      "severity": "high",
+      "direct": false,
+      "range": "<=4.0.0",
+      "via": [
+        "find-versions"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "bin-version-check",
+      "severity": "high",
+      "direct": false,
+      "range": "<=4.0.0",
+      "via": [
+        "bin-version"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "bin-wrapper",
+      "severity": "high",
+      "direct": false,
+      "range": ">=0.4.0",
+      "via": [
+        "bin-check",
+        "bin-version-check",
+        "download"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "browser-sync",
+      "severity": "high",
+      "direct": true,
+      "range": ">=2.0.0-rc1",
+      "via": [
+        "browser-sync-ui",
+        "immutable"
+      ],
+      "fixAvailable": {
+        "name": "browser-sync",
+        "version": "1.9.2",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "browser-sync-ui",
+      "severity": "high",
+      "direct": false,
+      "range": "*",
+      "via": [
+        "immutable"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "cacheable-request",
+      "severity": "high",
+      "direct": false,
+      "range": "0.1.0 - 2.1.4",
+      "via": [
+        "http-cache-semantics"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "cross-spawn",
+      "severity": "high",
+      "direct": false,
+      "range": "<6.0.6",
+      "via": [
+        "Regular Expression Denial of Service (ReDoS) in cross-spawn"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "css-select",
+      "severity": "high",
+      "direct": false,
+      "range": "<=3.1.0",
+      "via": [
+        "nth-check"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "decompress",
+      "severity": "critical",
+      "direct": false,
+      "range": "*",
+      "via": [
+        "Decompress: Archive extraction can create files and links outside of the target directory",
+        "decompress: Arbitrary File Write via Archive Extraction (Zip Slip)"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "download",
+      "severity": "moderate",
+      "direct": false,
+      "range": "<=2.0.0 || >=4.0.0",
+      "via": [
+        "decompress",
+        "got"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "exec-buffer",
+      "severity": "high",
+      "direct": false,
+      "range": "*",
+      "via": [
+        "execa",
+        "tempfile"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "execa",
+      "severity": "high",
+      "direct": false,
+      "range": "0.5.0 - 0.9.0",
+      "via": [
+        "cross-spawn"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "fast-xml-parser",
+      "severity": "moderate",
+      "direct": false,
+      "range": "<5.7.0",
+      "via": [
+        "fast-xml-parser XMLBuilder: XML Comment and CDATA Injection via Unescaped Delimiters"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "find-versions",
+      "severity": "high",
+      "direct": false,
+      "range": "<=3.2.0",
+      "via": [
+        "semver-regex"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "gifsicle",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=3.0.0",
+      "via": [
+        "bin-build",
+        "bin-wrapper"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "got",
+      "severity": "high",
+      "direct": false,
+      "range": "<=11.8.3",
+      "via": [
+        "Got allows a redirect to a UNIX socket",
+        "cacheable-request"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "gulp-imagemin",
+      "severity": "high",
+      "direct": true,
+      "range": ">=4.0.0",
+      "via": [
+        "imagemin-gifsicle",
+        "imagemin-mozjpeg",
+        "imagemin-optipng",
+        "imagemin-svgo"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "http-cache-semantics",
+      "severity": "high",
+      "direct": false,
+      "range": "<4.1.1",
+      "via": [
+        "http-cache-semantics vulnerable to Regular Expression Denial of Service"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "imagemin-gifsicle",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=6.0.0",
+      "via": [
+        "gifsicle"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "imagemin-mozjpeg",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=7.0.0",
+      "via": [
+        "mozjpeg"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "imagemin-optipng",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=6.0.0",
+      "via": [
+        "optipng-bin"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "imagemin-svgo",
+      "severity": "high",
+      "direct": false,
+      "range": "5.2.3 || 6.0.0 - 8.0.0",
+      "via": [
+        "svgo"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "immutable",
+      "severity": "high",
+      "direct": false,
+      "range": "<=4.3.8",
+      "via": [
+        "Immutable.js `List` 32-bit trie overflow → unrecoverable DoS",
+        "Immutabl: Hash-collision algorithmic complexity denial of service in Immutable.Map/Set"
+      ],
+      "fixAvailable": {
+        "name": "browser-sync",
+        "version": "1.9.2",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "is-svg",
+      "severity": "moderate",
+      "direct": false,
+      "range": "4.3.0 - 5.1.0",
+      "via": [
+        "fast-xml-parser"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "meow",
+      "severity": "high",
+      "direct": false,
+      "range": "3.4.0 - 5.0.0",
+      "via": [
+        "trim-newlines"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "mozjpeg",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=4.0.0",
+      "via": [
+        "bin-build",
+        "bin-wrapper"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "nth-check",
+      "severity": "high",
+      "direct": false,
+      "range": "<2.0.1",
+      "via": [
+        "Inefficient Regular Expression Complexity in nth-check"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "optipng-bin",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=3.0.0",
+      "via": [
+        "bin-build",
+        "bin-wrapper"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "semver-regex",
+      "severity": "high",
+      "direct": false,
+      "range": "<=3.1.3",
+      "via": [
+        "semver-regex Regular Expression Denial of Service (ReDOS)",
+        "Regular expression denial of service in semver-regex"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "svgo",
+      "severity": "high",
+      "direct": false,
+      "range": "1.0.0 - 2.8.2",
+      "via": [
+        "SVGO removeScripts plugin leaves some executable scripts intact",
+        "css-select"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "tempfile",
+      "severity": "moderate",
+      "direct": false,
+      "range": "<=4.0.0",
+      "via": [
+        "uuid"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "trim-newlines",
+      "severity": "high",
+      "direct": false,
+      "range": "<3.0.1",
+      "via": [
+        "Uncontrolled Resource Consumption in trim-newlines"
+      ],
+      "fixAvailable": true
+    },
+    {
+      "name": "uuid",
+      "severity": "moderate",
+      "direct": false,
+      "range": "<11.1.1",
+      "via": [
+        "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "9.2.0",
+        "isSemVerMajor": true
+      }
+    }
+  ]
+}
