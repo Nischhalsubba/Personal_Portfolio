@@ -2,11 +2,11 @@
 > scss-utilities@1.0.0 build
 > gulp build
 
-[04:44:16] Using gulpfile ~/work/Personal_Portfolio/Personal_Portfolio/gulpfile.js
-[04:44:16] Starting 'build'...
-[04:44:16] Starting 'scssTask'...
-[04:44:16] Starting 'jsTask'...
-[04:44:16] Starting 'images'...
+[04:48:49] Using gulpfile ~/work/Personal_Portfolio/Personal_Portfolio/gulpfile.js
+[04:48:49] Starting 'build'...
+[04:48:49] Starting 'scssTask'...
+[04:48:49] Starting 'jsTask'...
+[04:48:49] Starting 'images'...
 DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
 
 More info: https://sass-lang.com/d/legacy-js-api
@@ -129,10 +129,9 @@ More info: https://sass-lang.com/d/color-functions
 
 WARNING: 13 repetitive deprecation warnings omitted.
 
-[04:44:17] Finished 'jsTask' after 484 ms
-gulp-imagemin: Minified 1 image (saved 38 B - 14%)
-[04:44:17] Finished 'images' after 693 ms
-[04:44:17] Finished 'scssTask' after 698 ms
-[04:44:17] Starting 'cacheBustTask'...
-[04:44:17] Finished 'cacheBustTask' after 238 ms
-[04:44:17] Finished 'build' after 943 ms
+[04:48:49] Finished 'images' after 464 ms
+[04:48:49] Finished 'jsTask' after 466 ms
+[04:48:49] Finished 'scssTask' after 476 ms
+[04:48:49] Starting 'cacheBustTask'...
+[04:48:50] Finished 'cacheBustTask' after 178 ms
+[04:48:50] Finished 'build' after 657 ms
