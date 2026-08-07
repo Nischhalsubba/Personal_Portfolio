@@ -14,8 +14,8 @@ const replace = require('gulp-replace');
 const sass = require('gulp-sass/legacy')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
-const imagemin = require('gulp-imagemin');
-const browsersync = require('browser-sync').create();
+
+const imageminModule = import('gulp-imagemin');
 
 const files = {
     scssPath: './assets/sass/**/*.scss',
@@ -39,36 +39,30 @@ function jsTask() {
         .pipe(dest('./js/'));
 }
 
-function browserSync(done) {
-    browsersync.init({
-        server: {
-            baseDir: './'
-        },
-        port: 3000
-    });
-    done();
-}
-
-function browserSyncReload(done) {
-    browsersync.reload();
-    done();
-}
-
 function images() {
-    return src(files.imgPath)
-        .pipe(
-            imagemin([
-                imagemin.gifsicle({ interlaced: true }),
-                imagemin.optipng({ optimizationLevel: 5 }),
-                imagemin.svgo({
-                    plugins: [{
-                        removeViewBox: false,
-                        collapseGroups: true
-                    }]
-                })
-            ])
-        )
-        .pipe(dest('./dest/Images/'));
+    return imageminModule.then(({ default: imagemin, gifsicle, optipng, svgo }) =>
+        new Promise((resolve, reject) => {
+            const stream = src(files.imgPath)
+                .pipe(imagemin([
+                    gifsicle({ interlaced: true }),
+                    optipng({ optimizationLevel: 5 }),
+                    svgo({
+                        plugins: [{
+                            name: 'preset-default',
+                            params: {
+                                overrides: {
+                                    removeViewBox: false
+                                }
+                            }
+                        }]
+                    })
+                ]))
+                .pipe(dest('./dest/Images/'));
+
+            stream.on('end', resolve);
+            stream.on('error', reject);
+        })
+    );
 }
 
 const cbString = new Date().getTime();
@@ -91,4 +85,4 @@ const build = series(
 );
 
 exports.build = build;
-exports.default = series(build, parallel(browserSync, watchTasks));
+exports.default = series(build, watchTasks);
