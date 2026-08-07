@@ -1,0 +1,4 @@
+lock=success
+auditfix=failure
+install=skipped
+build=skipped
