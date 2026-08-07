@@ -41,7 +41,7 @@ This is the repository's default branch.
 
 ```bash
 npm install
-npm run test
+npm run build
 ```
 
 ### Configuration surface
@@ -110,7 +110,7 @@ flowchart LR
 - No conventional test directory was detected automatically.
 
 Detected commands:
-- `npm run test`
+- `npm run build`
 
 </td>
 <td width="33%" valign="top">
