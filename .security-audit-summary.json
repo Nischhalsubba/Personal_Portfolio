@@ -2,10 +2,10 @@
   "counts": {
     "info": 0,
     "low": 0,
-    "moderate": 11,
-    "high": 23,
+    "moderate": 15,
+    "high": 13,
     "critical": 1,
-    "total": 35
+    "total": 29
   },
   "findings": [
     {
@@ -21,7 +21,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -35,7 +35,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -49,7 +49,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -63,7 +63,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -79,34 +79,9 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
-    },
-    {
-      "name": "browser-sync",
-      "severity": "high",
-      "direct": true,
-      "range": ">=2.0.0-rc1",
-      "via": [
-        "browser-sync-ui",
-        "immutable"
-      ],
-      "fixAvailable": {
-        "name": "browser-sync",
-        "version": "1.9.2",
-        "isSemVerMajor": true
-      }
-    },
-    {
-      "name": "browser-sync-ui",
-      "severity": "high",
-      "direct": false,
-      "range": "*",
-      "via": [
-        "immutable"
-      ],
-      "fixAvailable": true
     },
     {
       "name": "cacheable-request",
@@ -118,7 +93,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -132,21 +107,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
-        "isSemVerMajor": true
-      }
-    },
-    {
-      "name": "css-select",
-      "severity": "high",
-      "direct": false,
-      "range": "<=3.1.0",
-      "via": [
-        "nth-check"
-      ],
-      "fixAvailable": {
-        "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -161,7 +122,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -176,7 +137,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -201,7 +162,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -213,7 +174,25 @@
       "via": [
         "fast-xml-parser XMLBuilder: XML Comment and CDATA Injection via Unescaped Delimiters"
       ],
-      "fixAvailable": true
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "7.1.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "file-type",
+      "severity": "moderate",
+      "direct": false,
+      "range": "13.0.0 - 21.3.0",
+      "via": [
+        "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "7.1.0",
+        "isSemVerMajor": true
+      }
     },
     {
       "name": "find-versions",
@@ -225,7 +204,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -240,7 +219,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -255,16 +234,17 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
     {
       "name": "gulp-imagemin",
-      "severity": "high",
+      "severity": "moderate",
       "direct": true,
-      "range": ">=4.0.0",
+      "range": ">=5.0.0",
       "via": [
+        "imagemin",
         "imagemin-gifsicle",
         "imagemin-mozjpeg",
         "imagemin-optipng",
@@ -272,7 +252,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -286,7 +266,21 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "imagemin",
+      "severity": "moderate",
+      "direct": false,
+      "range": ">=8.0.0",
+      "via": [
+        "file-type"
+      ],
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -300,7 +294,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -314,7 +308,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -330,30 +324,15 @@
     },
     {
       "name": "imagemin-svgo",
-      "severity": "high",
+      "severity": "moderate",
       "direct": false,
-      "range": "5.2.3 || 6.0.0 - 8.0.0",
+      "range": "10.0.0 - 11.0.1",
       "via": [
-        "svgo"
+        "is-svg"
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
-        "isSemVerMajor": true
-      }
-    },
-    {
-      "name": "immutable",
-      "severity": "high",
-      "direct": false,
-      "range": "<=4.3.8",
-      "via": [
-        "Immutable.js `List` 32-bit trie overflow → unrecoverable DoS",
-        "Immutabl: Hash-collision algorithmic complexity denial of service in Immutable.Map/Set"
-      ],
-      "fixAvailable": {
-        "name": "browser-sync",
-        "version": "1.9.2",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -365,17 +344,11 @@
       "via": [
         "fast-xml-parser"
       ],
-      "fixAvailable": true
-    },
-    {
-      "name": "meow",
-      "severity": "high",
-      "direct": false,
-      "range": "3.4.0 - 5.0.0",
-      "via": [
-        "trim-newlines"
-      ],
-      "fixAvailable": true
+      "fixAvailable": {
+        "name": "gulp-imagemin",
+        "version": "7.1.0",
+        "isSemVerMajor": true
+      }
     },
     {
       "name": "mozjpeg",
@@ -388,21 +361,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
-        "isSemVerMajor": true
-      }
-    },
-    {
-      "name": "nth-check",
-      "severity": "high",
-      "direct": false,
-      "range": "<2.0.1",
-      "via": [
-        "Inefficient Regular Expression Complexity in nth-check"
-      ],
-      "fixAvailable": {
-        "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -428,22 +387,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
-        "isSemVerMajor": true
-      }
-    },
-    {
-      "name": "svgo",
-      "severity": "high",
-      "direct": false,
-      "range": "1.0.0 - 2.8.2",
-      "via": [
-        "SVGO removeScripts plugin leaves some executable scripts intact",
-        "css-select"
-      ],
-      "fixAvailable": {
-        "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     },
@@ -457,19 +401,9 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
-    },
-    {
-      "name": "trim-newlines",
-      "severity": "high",
-      "direct": false,
-      "range": "<3.0.1",
-      "via": [
-        "Uncontrolled Resource Consumption in trim-newlines"
-      ],
-      "fixAvailable": true
     },
     {
       "name": "uuid",
@@ -481,7 +415,7 @@
       ],
       "fixAvailable": {
         "name": "gulp-imagemin",
-        "version": "9.2.0",
+        "version": "7.1.0",
         "isSemVerMajor": true
       }
     }
