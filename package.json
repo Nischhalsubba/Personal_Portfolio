@@ -7,26 +7,26 @@
     "@animxyz/core": "^0.4.0",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@glidejs/glide": "^3.4.1",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-terser": "^2.0.0",
     "lightgallery.js": "^1.4.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
-    "cssnano": "^4.1.10",
+    "autoprefixer": "^10.5.4",
+    "browser-sync": "^3.0.0",
+    "cssnano": "^8.0.2",
     "fslightbox": "^3.2.3",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^8.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^10.0.0",
     "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
+    "gulp-terser": "^2.0.0",
+    "postcss": "^8.5.23",
+    "sass": "^1.101.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
