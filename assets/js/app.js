@@ -1,72 +1,96 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/*
+ * Browser interactions for the legacy personal portfolio.
+ * Handles the responsive navigation and the decorative particle field without
+ * changing the markup contract used by the existing HTML pages.
+ */
+
+const particles = document.getElementById("particles");
+const particleBorders = ["50%", "0%"];
+const particleColors = ["#FF6B6B", "#FFE66D", "#4472CA"];
+
+/** Toggles the responsive class expected by the existing navigation markup. */
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  const navigation = document.getElementById("myTopnav");
+  if (!navigation) {
+    return;
   }
+
+  navigation.className =
+    navigation.className === "topnav" ? "topnav responsive" : "topnav";
 }
 
-// Background particles
-var particles = document.getElementById("particles");
-var border = ["50%", "0%"];
-var colors = ["#FF6B6B", "#FFE66D", "#4472CA"];
-
+/** Creates one short-lived decorative particle at the user's click position. */
 function createParticle(event) {
-  var x = event.clientX;
-  var y = event.clientY;
-  var color = Math.floor(Math.random() * 3);
+  if (!particles) {
+    return;
+  }
 
-  var div = document.createElement("div");
-  div.style.position = "absolute";
-  div.style.marginLeft = x + "px";
-  div.style.marginTop = y + "px";
-  div.style.width = "10px";
-  div.style.borderTop = "5px solid transparent";
-  div.style.borderRight = "5px solid transparent";
-  div.style.borderLeft = "5px solid transparent";
-  div.style.borderBottom = "10px solid " + colors[color];
-  div.style.animation = "move 5s ease-in infinite";
-  particles.appendChild(div);
-  setTimeout(
-    function () {
-      div.remove();
-    }, 5000);
+  const colorIndex = Math.floor(Math.random() * particleColors.length);
+  const particle = document.createElement("div");
+
+  particle.style.position = "absolute";
+  particle.style.marginLeft = `${event.clientX}px`;
+  particle.style.marginTop = `${event.clientY}px`;
+  particle.style.width = "10px";
+  particle.style.borderTop = "5px solid transparent";
+  particle.style.borderRight = "5px solid transparent";
+  particle.style.borderLeft = "5px solid transparent";
+  particle.style.borderBottom = `10px solid ${particleColors[colorIndex]}`;
+  particle.style.animation = "move 5s ease-in infinite";
+  particles.appendChild(particle);
+
+  /** Removes the temporary click particle after its animation finishes. */
+  function removeCreatedParticle() {
+    particle.remove();
+  }
+
+  window.setTimeout(removeCreatedParticle, 5000);
 }
 
+/** Rebuilds the decorative background particles for the current viewport size. */
 function getParticles() {
-  var np = document.documentElement.clientWidth / 40;
-  particles.innerHTML = "";
-  for (var i = 0; i < np; i++) {
-    var w = document.documentElement.clientWidth;
-    var h = document.documentElement.clientHeight;
-    var rndw = Math.floor(Math.random() * w) + 1;
-    var rndh = Math.floor(Math.random() * h) + 1;
-    var widthpt = Math.floor(Math.random() * 8) + 5;
-    var opty = Math.floor(Math.random() * 4) + 1;
-    var anima = Math.floor(Math.random() * 12) + 8;
-    var bdr = Math.floor(Math.random() * 2);
-    var color = Math.floor(Math.random() * 3);
+  if (!particles) {
+    return;
+  }
 
-    var div = document.createElement("div");
-    div.style.position = "absolute";
-    div.style.marginLeft = rndw + "px";
-    div.style.marginTop = rndh + "px";
-    div.style.width = widthpt + "px";
-    div.style.height = widthpt + "px";
-    div.style.opacity = opty;
-    div.style.backgroundColor = colors[color];
-    div.style.borderRadius = border[bdr];
-    div.style.animation = "move " + anima + "s ease-in infinite";
-    particles.appendChild(div);
+  const particleCount = document.documentElement.clientWidth / 40;
+  particles.innerHTML = "";
+
+  for (let index = 0; index < particleCount; index += 1) {
+    const viewportWidth = document.documentElement.clientWidth;
+    const viewportHeight = document.documentElement.clientHeight;
+    const x = Math.floor(Math.random() * viewportWidth) + 1;
+    const y = Math.floor(Math.random() * viewportHeight) + 1;
+    const size = Math.floor(Math.random() * 8) + 5;
+    const opacity = Math.floor(Math.random() * 4) + 1;
+    const duration = Math.floor(Math.random() * 12) + 8;
+    const borderIndex = Math.floor(Math.random() * particleBorders.length);
+    const colorIndex = Math.floor(Math.random() * particleColors.length);
+
+    const particle = document.createElement("div");
+    particle.style.position = "absolute";
+    particle.style.marginLeft = `${x}px`;
+    particle.style.marginTop = `${y}px`;
+    particle.style.width = `${size}px`;
+    particle.style.height = `${size}px`;
+    particle.style.opacity = opacity;
+    particle.style.backgroundColor = particleColors[colorIndex];
+    particle.style.borderRadius = particleBorders[borderIndex];
+    particle.style.animation = `move ${duration}s ease-in infinite`;
+    particles.appendChild(particle);
   }
 }
 
-function main(event) {
+/** Refreshes the particle field and ensures the click interaction is bound once. */
+function initializeParticleField() {
+  if (!particles) {
+    return;
+  }
+
   getParticles();
+  particles.removeEventListener("click", createParticle);
   particles.addEventListener("click", createParticle);
 }
 
-window.addEventListener("resize", main);
-window.addEventListener("load", main);
+window.addEventListener("resize", getParticles);
+window.addEventListener("load", initializeParticleField);
