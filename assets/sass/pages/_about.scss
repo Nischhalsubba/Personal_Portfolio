@@ -1,3 +1,8 @@
+/*
+ * About-page styling for the legacy portfolio.
+ * Controls the profile hero, software/skills lists, and resume/contact section.
+ */
+
 .about_hero {
   .left {
     width: 50%;
@@ -6,7 +11,6 @@
       font-weight: normal;
       font-size: 32px;
       line-height: 117%;
-      /* or 37px */
       letter-spacing: -0.03em;
       color: $gray;
     }
@@ -30,8 +34,6 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 121.5%;
-      /* or 22px */
-
       letter-spacing: -0.03em;
       text-decoration-line: underline;
     }
@@ -41,12 +43,8 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 121.5%;
-      /* or 22px */
-
       letter-spacing: -0.03em;
     }
-
-
   }
 
   .skill {
@@ -63,7 +61,6 @@
   .intro {
     font-size: 32px;
     line-height: 117%;
-    /* or 37px */
     letter-spacing: -0.03em;
   }
 
@@ -74,7 +71,6 @@
     .email {
       font-size: 32px;
       line-height: 117%;
-      /* or 37px */
       color: $black;
       letter-spacing: -0.03em;
       text-decoration: none;
@@ -83,7 +79,6 @@
     .btn {
       font-size: 18px;
       line-height: 121.5%;
-      /* identical to box height, or 22px */
       color: $black;
       letter-spacing: -0.03em;
       margin-top: 24px;
