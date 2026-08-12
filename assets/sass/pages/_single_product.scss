@@ -1,3 +1,9 @@
+/*
+ * Project-detail styling for the legacy portfolio.
+ * Owns the hero treatment, case-study sections, image gallery, and preserved
+ * popup/lightbox states used by single.html.
+ */
+
 .hero_banner {
   position: absolute;
   top: 0px;
@@ -29,7 +35,6 @@
       font-weight: bold;
       font-size: 60px;
       line-height: 120%;
-      /* or 72px */
       color: $black;
     }
 
@@ -37,15 +42,13 @@
       font-weight: normal;
       font-size: 24px;
       line-height: 120%;
-      /* or 29px */
       color: $gray;
       max-width: 90%;
     }
   }
 }
 
-// description
-
+/* Project narrative sections. */
 .description {
   margin: 100px 0px;
   margin-bottom: 0px;
@@ -61,7 +64,6 @@
       font-weight: 700;
       font-size: 30px;
       line-height: 120%;
-      /* identical to box height, or 36px */
       background-color: transparent;
       margin: 0px;
     }
@@ -76,7 +78,7 @@
   }
 }
 
-// Gallery
+/* Project image gallery and hover treatment. */
 .gallery {
   padding: 40px 0px;
   position: relative;
@@ -147,6 +149,7 @@
   }
 }
 
+/* Preserved slide-down detail panel states from the original gallery treatment. */
 .port {
   position: absolute;
   width: 100%;
@@ -227,7 +230,7 @@
   }
 }
 
-// test
+/* Alternate popup treatment retained for the original project-detail design. */
 .gallery {
   padding: 20px;
 }
@@ -239,7 +242,6 @@
   margin-bottom: 2rem;
 }
 
-/* Popup section */
 .popup {
   position: fixed;
   z-index: 2;
