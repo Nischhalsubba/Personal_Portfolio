@@ -1,3 +1,9 @@
+/*
+ * Project-list styling for the legacy portfolio home page.
+ * Arranges each project summary beside its preview image and defines the text
+ * hierarchy used by the repeated work cards.
+ */
+
 .projects {
   display: flex;
   margin-bottom: 100px;
@@ -16,19 +22,17 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 121.5%;
-        /* or 22px */
         letter-spacing: -0.03em;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         background-color: transparent;
       }
 
       .content {
-        font-family: Inter;
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 121.5%;
-        /* or 22px */
         letter-spacing: -0.03em;
       }
 
@@ -36,18 +40,16 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        /* or 17px */
         color: $gray;
         letter-spacing: -0.03em;
       }
     }
 
     .links {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       font-weight: 500;
       font-size: 18px;
       line-height: 121.5%;
-      /* or 22px */
       color: $black;
       letter-spacing: -0.03em;
       text-decoration-line: underline;
