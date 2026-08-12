@@ -1,3 +1,5 @@
+/* Footer layout and social-link styling shared by the legacy portfolio pages. */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -8,8 +10,7 @@ footer {
     font-weight: 500;
     font-size: 21px;
     line-height: 120%;
-    /* or 25px */
-    color: #2429AF;
+    color: #2429af;
     letter-spacing: -0.03em;
     text-decoration: none;
   }
@@ -19,13 +20,12 @@ footer {
       font-weight: 500;
       font-size: 21px;
       line-height: 120%;
-      /* or 25px */
       color: $black;
       letter-spacing: -0.03em;
       margin-right: 32px;
 
       &:last-child {
-        margin-right: 0px;
+        margin-right: 0;
       }
     }
   }
