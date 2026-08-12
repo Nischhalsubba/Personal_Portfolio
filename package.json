@@ -1,8 +1,8 @@
 {
   "name": "scss-utilities",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Build dependencies for the legacy Nischhal personal portfolio.",
   "dependencies": {
     "@animxyz/core": "^0.4.0",
     "@fortawesome/fontawesome-free": "^5.15.2",
@@ -28,15 +28,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Nischhalsubba/sassUtilities.git"
+    "url": "https://github.com/Nischhalsubba/Personal_Portfolio.git"
   },
   "keywords": [
-    "scssUtilities"
+    "portfolio",
+    "sass",
+    "gulp"
   ],
   "author": "Nischhal Raj Subba",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nischhalsubba/sassUtilities/issues"
+    "url": "https://github.com/Nischhalsubba/Personal_Portfolio/issues"
   },
-  "homepage": "https://github.com/Nischhalsubba/sassUtilities#readme"
+  "homepage": "https://github.com/Nischhalsubba/Personal_Portfolio#readme"
 }
