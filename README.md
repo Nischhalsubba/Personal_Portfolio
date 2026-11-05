@@ -61,3 +61,8 @@ Use accurate portfolio, role, skill and project terminology in natural copy. Mai
 flowchart LR
     UPDATE["Portfolio update"] --> VERIFY["Verify project content"] --> BUILD["Implement"] --> REVIEW["Responsive + accessibility review"] --> SEO["Metadata / links check"] --> PR["Pull request"]
 ```
+
+
+## Root-level static hosting
+
+The static site entry point is `index.html` at repository root. Supporting CSS, JS, and image assets are in their existing relative folders. Run `npm ci && npm run build` from root. For GitHub Pages choose `Deploy from a branch → master → / (root)`. A root `.nojekyll` file prevents Jekyll processing.
